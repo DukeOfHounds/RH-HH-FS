@@ -176,9 +176,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 202364687, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Name
+      value: Left Hot & Cold Parent Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 1670256624, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_Name
+      value: Right Hot & Cold Parent Controller
+      objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503725, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Name
-      value: XR Origin (XR Rig)
+      value: hot & Cold XR Origin (XR Rig)
       objectReference: {fileID: 0}
     - target: {fileID: 1717954561962503726, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_RootOrder
@@ -238,6 +246,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1767192434, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 879609353}
+    - targetCorrespondingSourceObject: {fileID: 202364688, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 597064880}
+    - targetCorrespondingSourceObject: {fileID: 1670256625, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4816579733600256948}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
 --- !u!4 &200823461 stripped
@@ -333,6 +347,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9f365cf844c03449bc8973eead2c3c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &279549026 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1670256625, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 200823460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &481996486
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,9 +365,9 @@ GameObject:
   - component: {fileID: 481996489}
   - component: {fileID: 481996488}
   - component: {fileID: 481996487}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cold Sphere
-  m_TagString: Untagged
+  m_TagString: Thermal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -365,8 +384,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5d1eaaadc844ffc937dcf10b14e9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OjectThermalValue:
-    _thermalValue: -1
+  OjectThermalFloat:
+    _thermalValue: 0
 --- !u!135 &481996488
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -453,6 +472,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &597064879
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1808552423}
+    m_Modifications:
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5433349764954549569, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_Name
+      value: Thermal Hand Collider
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+--- !u!4 &597064880 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+  m_PrefabInstance: {fileID: 597064879}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,9 +1184,9 @@ GameObject:
   - component: {fileID: 1414055641}
   - component: {fileID: 1414055640}
   - component: {fileID: 1414055639}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Hot Sphere
-  m_TagString: Untagged
+  m_TagString: Thermal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1122,8 +1203,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5d1eaaadc844ffc937dcf10b14e9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OjectThermalValue:
-    _thermalValue: 1
+  OjectThermalFloat:
+    _thermalValue: 0
 --- !u!135 &1414055640
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1210,6 +1291,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1808552423 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 202364688, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 200823460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4497261560550163445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1267,6 +1353,68 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+--- !u!1001 &4816579733600256947
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 279549026}
+    m_Modifications:
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5433349764954549569, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+      propertyPath: m_Name
+      value: Thermal Hand Collider
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+--- !u!4 &4816579733600256948 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 384738882505022907, guid: b009310af361c4232bc442ff40bf14ce, type: 3}
+  m_PrefabInstance: {fileID: 4816579733600256947}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
