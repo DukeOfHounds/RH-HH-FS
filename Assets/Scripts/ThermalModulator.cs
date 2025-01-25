@@ -28,13 +28,13 @@ public class ThermalModulator : MonoBehaviour
     public void OnHoverEnter(HoverEnterEventArgs args){
 
 
-        var interactor = args.interactorObject;
+        var hadness = args.interactorObject.handedness;
 
-        if (interactor is NearFarInteractor nearFar){
+       
         
-         Debug.Log("Interacting with RadiateThermalEnergy with nearFar handedness: " + nearFar.handedness);
+        Debug.Log("Interacting with RadiateThermalEnergy with nearFar handedness: " + hadness);
 
-        }
+        
 
     }
 
