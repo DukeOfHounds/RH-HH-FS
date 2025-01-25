@@ -19,4 +19,9 @@ public class ThermalModulator : MonoBehaviour
     {
         
     }
+
+    public void RadiateThermalEnergy(){
+        Debug.Log("Interacting with RadiateThermalEnergy");
+    }
+
 }
