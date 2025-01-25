@@ -8,11 +8,10 @@ public class ThermalHandCollider : MonoBehaviour
     
     public RestrictedThermalRange CurrentOutpurThermalFloat;
 
-    // Start is called before the first frame update
 
-    void OnCollisionEnter(Collision collision){
-        ThermalModulator thermalModulator = collision.gameObject.GetComponent<ThermalModulator>();
-        Debug.Log("Collision with: " + collision.gameObject.name + " with a temperature of: " + thermalModulator.OjectThermalFloat);
+    void OnTriggerEnter (Collider collider){
+        ThermalModulator thermalModulator = collider.gameObject.GetComponent<ThermalModulator>();
+        Debug.Log("collider with: " + collider.gameObject.name + " with a temperature of: " + thermalModulator.OjectThermalFloat);
     }
     
     
