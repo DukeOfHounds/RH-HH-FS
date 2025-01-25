@@ -6,9 +6,9 @@ using System;
 public struct RestrictedThermalRange
 {   
     [SerializeField]
-    private double _thermalValue;
+    private float _thermalValue;
 
-    public double Value
+    public float Value
     {
         get => _thermalValue;
         set
@@ -21,7 +21,7 @@ public struct RestrictedThermalRange
         }
     }
 
-    public RestrictedThermalRange(double value)
+    public RestrictedThermalRange(float value)
     {
         if (value < -1 || value > 1)
         {
