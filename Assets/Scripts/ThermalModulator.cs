@@ -2,47 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class ThermalModulator : MonoBehaviour
 {
-    [System.Serializable]
-    public struct RestrictedThermalRange
-    {   
-        [SerializeField]
-        private double _thermalValue;
-
-        public double Value
-        {
-            get => _thermalValue;
-            set
-            {
-                if (value < -1 || value > 1)
-                {
-                    throw new ArgumentOutOfRangeException(nameof(value), "Value must be between -1 and 1.");
-                }
-                _thermalValue = value;
-            }
-        }
-
-        public RestrictedThermalRange(double value)
-        {
-            if (value < -1 || value > 1)
-            {
-                throw new ArgumentOutOfRangeException(nameof(value), "Value must be between -1 and 1.");
-            }
-            _thermalValue = value;
-        }
-
-        public override string ToString() => _thermalValue.ToString();
-    }
-
     
-    
-    public RestrictedThermalRange OjectThermalValue;
+    private XRBaseInteractable xRBaseInteractable;
+
+    public RestrictedThermalRange OjectThermalFloat; 
     // Start is called before the first frame update
     void Start()
     {
-        
+        xRBaseInteractable = GetComponent<XRBaseInteractable>();
+        xRBaseInteractable.hoverEntered.AddListener(OnHoverEnter);
     }
 
     // Update is called once per frame
@@ -50,4 +24,20 @@ public class ThermalModulator : MonoBehaviour
     {
         
     }
+    
+    public void OnHoverEnter(HoverEnterEventArgs args){
+
+
+        var hadness = args.interactorObject.handedness;
+
+       
+        
+        Debug.Log("Interacting with RadiateThermalEnergy with nearFar handedness: " + hadness);
+
+        
+
+    }
+
+
+
 }

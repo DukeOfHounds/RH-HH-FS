@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 
 // Custom Property Drawer for the RestrictedThermalRange struct
-[CustomPropertyDrawer(typeof(ThermalModulator.RestrictedThermalRange))]
+[CustomPropertyDrawer(typeof(RestrictedThermalRange))]
 public class RestrictedRangeDrawer : PropertyDrawer
 {
     public override void OnGUI(Rect position, SerializedProperty property, GUIContent label)
