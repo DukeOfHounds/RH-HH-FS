@@ -850,6 +850,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8429981633443581382, guid: 6c8af5c8012f01440af6cb2bc3eb987c, type: 3}
   m_PrefabInstance: {fileID: 879609352}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1219073537
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4261942693864256157, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+      propertyPath: networkingManager
+      value: 
+      objectReference: {fileID: 3482940136190759030}
+    - target: {fileID: 4261942693864256157, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+      propertyPath: OjectThermalFloat._thermalValue
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4314204158199807105, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: eb22ccfbff92a4345be7ce74ddca92df, type: 2}
+    - target: {fileID: 6186717714198454204, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+      propertyPath: m_Name
+      value: Thermal Sphere (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442834492982255430, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442834492982255430, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.745
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442834492982255430, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442834492982255430, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442834492982255430, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442834492982255430, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442834492982255430, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442834492982255430, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442834492982255430, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8442834492982255430, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
 --- !u!1 &1387816410
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,6 +1143,82 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &3482940136190759029
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4762577370462832501, guid: b94aeb86004eb454095fe149439e506b, type: 3}
+      propertyPath: serverIp
+      value: 192.168.8.207
+      objectReference: {fileID: 0}
+    - target: {fileID: 4762577370462832501, guid: b94aeb86004eb454095fe149439e506b, type: 3}
+      propertyPath: serverPort
+      value: 10869
+      objectReference: {fileID: 0}
+    - target: {fileID: 5081348003459181198, guid: b94aeb86004eb454095fe149439e506b, type: 3}
+      propertyPath: m_Name
+      value: NetworkingManger
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414604670108838363, guid: b94aeb86004eb454095fe149439e506b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.8318174
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414604670108838363, guid: b94aeb86004eb454095fe149439e506b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.9515634
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414604670108838363, guid: b94aeb86004eb454095fe149439e506b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.317565
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414604670108838363, guid: b94aeb86004eb454095fe149439e506b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414604670108838363, guid: b94aeb86004eb454095fe149439e506b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414604670108838363, guid: b94aeb86004eb454095fe149439e506b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414604670108838363, guid: b94aeb86004eb454095fe149439e506b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414604670108838363, guid: b94aeb86004eb454095fe149439e506b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414604670108838363, guid: b94aeb86004eb454095fe149439e506b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6414604670108838363, guid: b94aeb86004eb454095fe149439e506b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b94aeb86004eb454095fe149439e506b, type: 3}
+--- !u!114 &3482940136190759030 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4762577370462832501, guid: b94aeb86004eb454095fe149439e506b, type: 3}
+  m_PrefabInstance: {fileID: 3482940136190759029}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db6108756f904aabaea011a63f41169d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4497261560550163445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1083,16 +1228,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4261942693864256157, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+      propertyPath: networkingManager
+      value: 
+      objectReference: {fileID: 3482940136190759030}
+    - target: {fileID: 4261942693864256157, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
       propertyPath: OjectThermalFloat._thermalValue
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4314204158199807105, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 59f321a193f35437f97fe782a8b31a0c, type: 2}
     - target: {fileID: 6186717714198454204, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
       propertyPath: m_Name
       value: Thermal Sphere
       objectReference: {fileID: 0}
     - target: {fileID: 8442834492982255430, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.5
+      value: -2.44
       objectReference: {fileID: 0}
     - target: {fileID: 8442834492982255430, guid: b3404746b4cf2408ea93183d65f63e45, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1141,9 +1294,11 @@ SceneRoots:
   m_Roots:
   - {fileID: 705507995}
   - {fileID: 4497261560550163445}
+  - {fileID: 1219073537}
   - {fileID: 1407939315}
   - {fileID: 1923106981}
   - {fileID: 200823460}
   - {fileID: 1387816413}
   - {fileID: 146781189}
   - {fileID: 452505473}
+  - {fileID: 3482940136190759029}

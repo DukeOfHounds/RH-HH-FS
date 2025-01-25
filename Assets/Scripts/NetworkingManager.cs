@@ -38,19 +38,19 @@ namespace DefaultNamespace
             _udpClient.SendAsync(encoded, encoded.Length);
         }
 
-        public void MakeHot(int index)
+        public void MakeHot(int handeness)
         {
-            SendMsg($"HOT {index}\n");
+            SendMsg($"HOT {handeness}\n");
         }
 
-        public void MakeCold(int index)
+        public void MakeCold(int handeness)
         {
-            SendMsg($"COLD {index}\n");
+            SendMsg($"COLD {handeness}\n");
         }
 
-        public void MakeOff(int index)
+        public void MakeOff(int handeness)
         {
-            SendMsg($"OFF {index}\n");
+            SendMsg($"OFF {handeness}\n");
         }
     }
 }

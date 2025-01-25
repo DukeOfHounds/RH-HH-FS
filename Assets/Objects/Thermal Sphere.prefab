@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5d1eaaadc844ffc937dcf10b14e9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  networkingManager: {fileID: 4762577370462832501, guid: b94aeb86004eb454095fe149439e506b, type: 3}
   OjectThermalFloat:
     _thermalValue: 0
 --- !u!54 &5028006858565844726

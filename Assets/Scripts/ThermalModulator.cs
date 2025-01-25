@@ -5,10 +5,13 @@ using System;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
+using DefaultNamespace;
 
 public class ThermalModulator : MonoBehaviour
 {
     
+    public NetworkingManager networkingManager;
+
     private XRBaseInteractable xRBaseInteractable;
 
     public RestrictedThermalRange OjectThermalFloat; 
@@ -17,6 +20,8 @@ public class ThermalModulator : MonoBehaviour
     {
         xRBaseInteractable = GetComponent<XRBaseInteractable>();
         xRBaseInteractable.hoverEntered.AddListener(OnHoverEnter);
+        xRBaseInteractable.hoverExited.AddListener(OnHoverExit);
+
     }
 
     // Update is called once per frame
@@ -24,20 +29,28 @@ public class ThermalModulator : MonoBehaviour
     {
         
     }
-    
-    public void OnHoverEnter(HoverEnterEventArgs args){
+
+    // int hadeness 0 is right and 1 is left
+    public void OnHoverEnter(HoverEnterEventArgs args)
+    {
 
 
-        var hadness = args.interactorObject.handedness;
+        var handedness = args.interactorObject.handedness;
+        var intHandedness = (handedness == InteractorHandedness.Right) ? 1 : 0;
 
-       
-        
-        Debug.Log("Interacting with RadiateThermalEnergy with nearFar handedness: " + hadness);
-
-        
-
+        if (OjectThermalFloat.Value > 0)
+            networkingManager.MakeHot(intHandedness);
+        else
+            networkingManager.MakeCold(intHandedness);
     }
 
+    public void OnHoverExit(HoverExitEventArgs args)
+    {
+        var handedness = args.interactorObject.handedness;
+        var intHandedness = (handedness == InteractorHandedness.Right) ? 1 : 0;
+
+        networkingManager.MakeOff(intHandedness);
 
 
+    }
 }
