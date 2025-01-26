@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 23009889196577752}
   - component: {fileID: 65913516913907014}
   - component: {fileID: 4819844150320837567}
-  - component: {fileID: 5280898411888714169}
   - component: {fileID: 8351845991700132654}
+  - component: {fileID: 5214407886355308085}
   m_Layer: 0
   m_Name: Travel Mug
   m_TagString: Untagged
@@ -135,21 +135,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &5280898411888714169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1371778623023942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ba5d1eaaadc844ffc937dcf10b14e9c2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  networkingManager: {fileID: 0}
-  OjectThermalFloat:
-    _thermalValue: 0.5
 --- !u!114 &8351845991700132654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,3 +257,17 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
+--- !u!114 &5214407886355308085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371778623023942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 708eea4173d94d268b7eb5a7e7b9c11f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable: {fileID: 8351845991700132654}
+  thermalPower: 3

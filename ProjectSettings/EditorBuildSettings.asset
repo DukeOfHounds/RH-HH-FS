@@ -4,5 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/CoffeeTime.unity
+    guid: 4d52b0eae8ec3475795b7687a416103a
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 13d4838a7640040a78df772408e448b2, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 1a8206e39a96a47fcadcccabc52c5c5f, type: 2}
