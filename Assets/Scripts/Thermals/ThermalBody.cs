@@ -17,6 +17,11 @@ namespace Thermals
 
         public float Temperature => temperature;
 
+        private void Awake()
+        {
+            thermalSources.AddRange(FindObjectsOfType<BaseThermalSource>());
+        }
+
         private void FixedUpdate()
         {
             UpdateTemperature(Time.fixedDeltaTime);

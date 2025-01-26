@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8915878270191673924}
   - component: {fileID: 8779695222896498198}
   - component: {fileID: 3042364061431246072}
+  - component: {fileID: 2331300073412838508}
   m_Layer: 0
   m_Name: Mug
   m_TagString: Untagged
@@ -147,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba5d1eaaadc844ffc937dcf10b14e9c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  networkingManager: {fileID: 0}
+  gloveNetworkClient: {fileID: 0}
   OjectThermalFloat:
     _thermalValue: 0.5
 --- !u!114 &3042364061431246072
@@ -272,3 +273,17 @@ MonoBehaviour:
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
+--- !u!114 &2331300073412838508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411003019843990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 708eea4173d94d268b7eb5a7e7b9c11f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactable: {fileID: 3042364061431246072}
+  thermalPower: 3
