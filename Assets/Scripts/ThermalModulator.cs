@@ -5,12 +5,12 @@ using System;
 using UnityEngine.XR.Interaction.Toolkit.Interactables;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
-using DefaultNamespace;
+using UnityEngine.Serialization;
 
 public class ThermalModulator : MonoBehaviour
 {
     
-    public NetworkingManager networkingManager;
+    [FormerlySerializedAs("gloveClient")] [FormerlySerializedAs("networkingManager")] public GloveNetworkClient gloveNetworkClient;
 
     private XRBaseInteractable xRBaseInteractable;
 
@@ -55,9 +55,9 @@ public class ThermalModulator : MonoBehaviour
 
 
         if (OjectThermalFloat.Value > 0)
-            networkingManager.MakeHot(intHandedness);
+            gloveNetworkClient.MakeHot(intHandedness);
         else
-            networkingManager.MakeCold(intHandedness);
+            gloveNetworkClient.MakeCold(intHandedness);
     }
 
     public void OnHoverExit(HoverExitEventArgs args)
@@ -68,7 +68,7 @@ public class ThermalModulator : MonoBehaviour
         // intHadeness 0 is right and 1 is left
         var intHandedness = (handedness == InteractorHandedness.Right) ? 1 : 0;
 
-        networkingManager.MakeOff(intHandedness);
+        gloveNetworkClient.MakeOff(intHandedness);
 
 
     }
@@ -83,11 +83,11 @@ public class ThermalModulator : MonoBehaviour
         isSelecting = true;
 
         if (OjectThermalFloat.Value > 0){
-            networkingManager.MakeHot(intHandedness);
+            gloveNetworkClient.MakeHot(intHandedness);
             Debug.Log("select hot");
         }
         else
-            networkingManager.MakeCold(intHandedness);
+            gloveNetworkClient.MakeCold(intHandedness);
     }
     public void OnSelectExit(SelectExitEventArgs args)
     {
@@ -101,6 +101,6 @@ public class ThermalModulator : MonoBehaviour
         else
             isWarmingLeftHand =false;
 
-        networkingManager.MakeOff(intHandedness);
+        gloveNetworkClient.MakeOff(intHandedness);
     }
 }
