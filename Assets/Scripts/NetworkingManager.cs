@@ -13,7 +13,7 @@ namespace DefaultNamespace
         
         private UdpClient _udpClient;
         
-        private void Start()
+        private void Awake()
         {
             _udpClient = new UdpClient();
             _udpClient.Connect(serverIp, serverPort);
@@ -41,22 +41,22 @@ namespace DefaultNamespace
         // int hadeness 0 is right and 1 is left
         public void MakeHot(int handeness)
         {
-            SendMsg($"HOT {handeness}\n");
+            SendMsg("H");
         }
 
         public void MakeCold(int handeness)
         {
-            SendMsg($"COLD {handeness}\n");
+            SendMsg("C");
         }
 
         public void MakeOff(int handeness)
         {
-            SendMsg($"OFF {handeness}\n");
+            SendMsg("O");
         }
 
         private void OnDisable()
         {
-            SendMsg($"OFF");
+            SendMsg("O");
         }
     }
 }
